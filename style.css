@@ -92,6 +92,7 @@ h3 {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 36px 36px;
+    gap: 16px;
 }
 
 #log-in, p {
@@ -100,13 +101,35 @@ h3 {
     color: black;
 }
 
+form {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 24px;
+}
+
+.form-column-A, .form-column-B {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48%;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-family: 'Norse', 'Courier New', Courier, monospace;
+    margin-bottom: 16px;
+}
+
 input {
+  font-family: 'Courier New', Courier, monospace;
   color: black;
   border: 2px solid #E5E7EB;
   margin-bottom: 15px;
   padding: 5px;
   border-radius: 5px;
   transition: box-shadow 0.3s ease;
+  width: 100%;
 }
 
 input:not(:placeholder-shown):invalid  {
