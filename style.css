@@ -10,7 +10,8 @@
 body {
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    justify-content: center;
     background-color: black;
     height: 100vh;
 }
@@ -21,17 +22,21 @@ h1 {
     color: white;
 }
 
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 60ch;
+}
+
 .banner {
     width: 100%;
     background-color: rgba(79, 78, 83, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    margin-top: 30vh;
 }
 
 #odin-logo {
-
     height: 4rem;
 }
 
@@ -41,42 +46,52 @@ h1 {
     color: white;
 }
 
-.credit {
-}
-/* I can't figure out how to get this DIV to stick to the bottom */
-
 .container-left {
     width: 30%;
-    height: 66vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url(assets/fern-image.jpg);
     background-size: cover;
     background-position: center;
+    margin-left: 10vw;
 }
 
 .container-right {
     width: 70%;
-    height: 66vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
+    align-items: stretch;
+    margin-right: 10vw;
 }
 
 .top-column {
     background-color: lightgray;
-    padding: 12px 12px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 24px 36px;
 }
 .middle-column {
     background-color: whitesmoke;
+    height: 40vh;
     padding: 12px 12px;
 }
 
 .bottom-column {
     background-color: lightgrey;
-    padding: 24px 32px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 36px;
 }
 
 #log-in, p {
