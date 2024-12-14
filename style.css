@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(assets/Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Norse', 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    background-color: rgba(79, 78, 83, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#odin-logo {
+
+    height: 4rem;
+}
+
+#attribution, p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.credit {
+}
+/* I can't figure out how to get this DIV to stick to the bottom */
+
+.container-left {
+    width: 30%;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/fern-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-right {
+    width: 70%;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-column {
+    background-color: lightgray;
+    padding: 12px 12px;
+}
+.middle-column {
+    background-color: whitesmoke;
+    padding: 12px 12px;
+}
+
+.bottom-column {
+    background-color: lightgrey;
+    padding: 24px 32px;
+}
+
+#log-in, p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: black;
+}
+
+input {
+  color: black;
+  border: 2px solid #E5E7EB;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+input:not(:placeholder-shown):invalid  {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:focus::placeholder {
+    color: transparent
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    padding: 12px 24px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
