@@ -82,6 +82,8 @@ h3 {
     background-color: whitesmoke;
     height: 40vh;
     padding: 12px 12px;
+    display: flex;
+    align-items: stretch;
 }
 
 .bottom-column {
@@ -104,21 +106,28 @@ h3 {
 form {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 24px 24px;
+    align-items: stretch;
 }
 
-.form-column-A, .form-column-B {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 48%;
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    width: 48%;
+    display: inline-block;
+}
+
+li {
+    padding-top: 12px;
 }
 
 legend {
     font-size: 1.25rem;
     font-family: 'Norse', 'Courier New', Courier, monospace;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 input {

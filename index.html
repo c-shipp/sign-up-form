@@ -29,22 +29,33 @@
             <form action=".." method="get">
             <fieldset>
                 <legend>Let's do this!</legend>
-                <div class="form-column-A">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="John" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="John_Smith@website.com" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" minlength="8" pattern="[A-Za-z0-9]{8,}" autocomplete="off" required>
-                </div>
-                <div class="form-column-B">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="555-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" minlength="8" pattern="[A-Za-z0-9]{8,}" autocomplete="off"  required>
-                </div>
+                <ul>
+                    <li>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="John" required>
+                    </li>
+                    <li>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="John_Smith@website.com" required>
+                    </li>
+                    <li>
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="555-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" minlength="8" pattern="[A-Za-z0-9]{8,}" autocomplete="off" required>
+                        
+                    </li>
+                    <li>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" minlength="8" pattern="[A-Za-z0-9]{8,}" autocomplete="off"  required>
+                    </li>
+                </ul>
                 <!-- Edited the HTML to have two form-columns. Not working-->
             </fieldset>
             </form>
